@@ -13,14 +13,12 @@ public class Passenger {
 
     private String name;
 
-    // Constructors, getters, and setters
     public Passenger() {}
 
     public Passenger(String name) {
         this.name = name;
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }

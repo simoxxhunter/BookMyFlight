@@ -6,6 +6,10 @@
     <persistence-unit name="default">
         <class>Model.Airport</class>
         <class>Model.Vol</class>
+        <class>Model.Passenger</class>
+        <class>Model.Reservation</class>
+        <class>Model.Seat</class>
+        <class>Model.Utilisateur</class>
 
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/BookMyFlight"/>

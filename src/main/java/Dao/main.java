@@ -14,7 +14,7 @@ public class main {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
 
-        Airport airport = new Airport("Airport Name", "Departure City", "Arrival City", "Country");
+        Airport airport = new Airport("jhgjg Name", "Departure City", "Arrival City", "Country");
         entityManager.persist(airport);
 
         transaction.commit();

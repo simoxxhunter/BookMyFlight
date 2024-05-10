@@ -14,7 +14,7 @@ public class Reservation {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private Utilisateur utilisateur;
 
     @ManyToOne
     @JoinColumn(name = "seat_id")
@@ -26,8 +26,8 @@ public class Reservation {
 
     public Reservation() {}
 
-    public Reservation(User user, Seat seat, Passenger passengerName) {
-        this.user = user;
+    public Reservation(Utilisateur utilisateur, Seat seat, Passenger passengerName) {
+        this.utilisateur = utilisateur;
         this.seat = seat;
         this.passengerName = passengerName;
     }
@@ -40,12 +40,12 @@ public class Reservation {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
+    public Utilisateur getUser() {
+        return utilisateur;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
     }
 
     public Seat getSeat() {

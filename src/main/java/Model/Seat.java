@@ -16,20 +16,15 @@ public class Seat {
     private String seatNumber;
     private String conditionSeat;
 
-    @ManyToOne
-    @JoinColumn(name = "vol_id")
-    private Vol vol;
 
-    // Constructors, getters, and setters
+
     public Seat() {}
 
-    public Seat(String seatNumber, String conditionSeat, Vol vol) {
+    public Seat(String seatNumber, String conditionSeat) {
         this.seatNumber = seatNumber;
         this.conditionSeat = conditionSeat;
-        this.vol = vol;
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -52,13 +47,5 @@ public class Seat {
 
     public void setConditionSeat(String conditionSeat) {
         this.conditionSeat = conditionSeat;
-    }
-
-    public Vol getVol() {
-        return vol;
-    }
-
-    public void setVol(Vol vol) {
-        this.vol = vol;
     }
 }
